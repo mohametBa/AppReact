@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useCallback, useEffect, useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Register(props) {
     const [countries, setCountries] = useState([]);
@@ -43,7 +43,7 @@ function Register(props) {
         });
         props.setUser(name)
 
-        Navigate("/");
+Navigate("/");
 
     } catch(error){
         console.error(error);
